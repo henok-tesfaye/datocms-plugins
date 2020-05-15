@@ -35,7 +35,8 @@
       "browser"
     ],
     "ignore": [
-      "/src/plugins/ckeditor-mathtype/ckeditor5/"
+      "/src/plugins/ckeditor-mathtype/ckeditor5/",
+      "public/wiris-studio/quizzes"
     ]
   },
   "browserslist": {

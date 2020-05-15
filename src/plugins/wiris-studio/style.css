@@ -1,0 +1,17 @@
+.container {
+  background-color: white;
+}
+
+.wrs_ariaLiveRegion wrs_hiddenButDisplayed {
+  color: black !important;
+}
+
+.configtextarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  color: #393b3f;
+  border: 1px solid #f0f0f0;
+}

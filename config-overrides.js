@@ -11,6 +11,11 @@ const multipleEntry = require('react-app-rewire-multiple-entry')([
     entry: 'src/plugins/desmos',
     template: 'public/desmos/index.html',
     outPath: '/desmos/index.html'
+  },
+  {
+    entry: 'src/plugins/wiris-studio',
+    template: 'public/wiris-studio/index.html',
+    outPath: '/wiris-studio/index.html'
   }
 ])
 
