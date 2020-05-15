@@ -1,0 +1,8 @@
+.container {
+  background-color: white;
+  padding: 24px;
+}
+
+.ck-editor__editable {
+  min-height: 320px;
+}
