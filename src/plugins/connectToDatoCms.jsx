@@ -19,6 +19,7 @@ export default mapPluginToProps => BaseComponent => (
 
       this.unsubscribe = plugin.addFieldChangeListener(plugin.fieldPath, () => {
         this.setState(mapPluginToProps(plugin))
+        this.inner.loadQuizzesStudio && this.inner.loadQuizzesStudio()
       })
     }
 
@@ -27,7 +28,7 @@ export default mapPluginToProps => BaseComponent => (
     }
 
     render () {
-      return <BaseComponent {...this.props} {...this.state} />
+      return <BaseComponent ref={ref => (this.inner = ref)} {...this.props} {...this.state} />
     }
   }
 )
