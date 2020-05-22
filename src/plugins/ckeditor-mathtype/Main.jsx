@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import CKEditor from '@ckeditor/ckeditor5-react'
+import ClassicEditor from './ClassicEditor'
 
 import connectToDatoCms from '../connectToDatoCms'
 import './style.css'
-const ClassicEditor = require('./ckeditor5/build/ckeditor')
 
 class Main extends Component {
   render () {
