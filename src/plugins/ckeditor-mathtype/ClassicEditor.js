@@ -11,6 +11,11 @@ import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapte
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat'
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold'
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic'
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code'
+import StrikeThrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough'
+import SuperScript from '@ckeditor/ckeditor5-basic-styles/src/superscript'
+import SubScript from '@ckeditor/ckeditor5-basic-styles/src/subscript'
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline'
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote'
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder'
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage'
@@ -28,6 +33,10 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph'
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice'
 import Table from '@ckeditor/ckeditor5-table/src/table'
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar'
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment'
+import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily'
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize'
+import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline'
 
 import Mathtype from '@wiris/mathtype-ckeditor5'
 
@@ -40,6 +49,7 @@ ClassicEditor.builtinPlugins = [
   Autoformat,
   Bold,
   Italic,
+  Underline,
   BlockQuote,
   CKFinder,
   EasyImage,
@@ -57,32 +67,57 @@ ClassicEditor.builtinPlugins = [
   PasteFromOffice,
   Table,
   TableToolbar,
-  Mathtype
+  Mathtype,
+  Alignment,
+  FontFamily,
+  FontSize,
+  HorizontalLine,
+  Code,
+  SuperScript,
+  SubScript,
+  StrikeThrough
 ]
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
   toolbar: {
     items: [
+      'Essentials',
       'heading',
       'Mathtype',
+      'ChemType',
       '|',
       'bold',
       'italic',
-      'link',
-      'bulletedList',
-      'numberedList',
-      '|',
-      'indent',
-      'outdent',
+      'underline',
+      'horizontalline',
+      'code',
+      'superscript',
+      'subscript',
+      'strikethrough',
       '|',
       'imageUpload',
-      'blockQuote',
       'insertTable',
       'mediaEmbed',
       'undo',
-      'redo'
-    ]
+      'redo',
+      'fontFamily',
+      'fontSize',
+      '|',
+      'alignment:left',
+      'alignment:right',
+      'alignment:center',
+      'alignment:justify',
+      '|',
+      'link',
+      'bulletedList',
+      'numberedList',
+      'blockQuote',
+      '|',
+      'indent',
+      'outdent'
+    ],
+    shouldNotGroupWhenFull: true
   },
   image: {
     toolbar: [
