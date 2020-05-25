@@ -6,3 +6,8 @@
 .ck-editor__editable {
   min-height: 320px;
 }
+
+.ck.ck-dropdown__panel {
+  max-height: 80vh;
+  overflow-y: auto;
+}
