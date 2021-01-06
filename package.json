@@ -32,7 +32,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "@wiris/mathtype-ckeditor5": "^7.20.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "desmos": "^1.5.3",
     "raw-loader": "^3.1.0",
     "react": "^16.13.1",
